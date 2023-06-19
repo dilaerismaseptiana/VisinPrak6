@@ -3,7 +3,7 @@ google.charts.setOnLoadCallback(getSpreadsheetData);
 
 function getSpreadsheetData() {
     var spreadsheetId = '1kh865J7uGpI_FglAOGmOFKGGZatCn6Cc5oi-0l_0vgE';
-    var range = 'TS!A17:C20';
+    var range = 'TS!A1:B13';
 
     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/' + spreadsheetId + '/gviz/tq?gid=0&range=' + range);
     query.send(handleQueryResponse);
